@@ -370,3 +370,9 @@ h1,h2,h3,h4 {
 .owl-theme .owl-dots .owl-dot.active span {
     background-color: #222;
 }
+
+@media (min-width: 769px) {
+    .mobile-products {
+        display: none;
+    }
+}
