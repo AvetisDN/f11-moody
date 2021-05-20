@@ -4,7 +4,6 @@ html, body {
     font-size: 16px;
     color: #323334;
     min-height: 100vh;
-    line-height: 1.4em;
 }
 * {
     margin: 0;
@@ -67,6 +66,12 @@ html, body {
     color: #ddd;
     background-color: #525354;
     border-color: #ddd;
+}
+@media (max-width: 450px) {
+    .btn {
+        font-size: .8rem;
+        padding: .8rem 1.6rem;
+    }
 }
 
 h1,h2,h3,h4 {
@@ -538,4 +543,104 @@ h5, h6 {
         margin-top: 0;
         padding-left: 1.5rem;
     }
+}
+
+
+.banner {
+    height:35vw;
+    min-height: 220px;
+    background: url(../images/bedroom.jpg) center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .banner-block {
+    background-color: rgba(255,255,255,.9);
+    padding: 3rem 5vw;
+    position: absolute;
+    width: 50%;
+    max-width: 545px;
+    right: 50%;
+    bottom: 10%;
+}
+.banner .banner-block h4 {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+.banner .banner-block .banner-block__price {
+    font-size: 1.75rem;
+    color: #7B5136;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.banner .banner-block .banner-block__price .old {
+    font-size: 1rem;
+    text-decoration: line-through;
+    text-decoration-color: #323334;
+    margin-left: 1.333rem;
+}
+.banner .banner-block p {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .banner .banner-block {
+        right: 40%;
+    }
+}
+@media (max-width: 1024px) {
+    .banner .banner-block {
+        text-align: center;
+    }
+    .banner .banner-block .banner-block__price,
+    .banner .banner-block p {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .banner .banner-block {
+        padding: 5vw;
+    }
+    .banner .banner-block h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* TOP RATING */
+
+.top {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.top h2 {
+    margin-bottom: 3rem;
+}
+.top .top-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.top .top-column .top-column__product {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.top .top-column .top-column__product .product-text h5 {
+    font-size: 1.15rem;
+}
+.top .top-column .top-column__product .product-text .rating {
+    margin: 1rem 0;
+}
+.top .top-column .top-column__product .product-text .rating i {
+    cursor: pointer;
+}
+.top .top-column .top-column__product .product-text .rating .gold {
+    color: #F2C94C;
+}
+.top .top-column .top-column__product .product-text .price {
+    font-size: 1.5rem;
+    font-weight: 700;
 }

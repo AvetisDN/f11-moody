@@ -30,3 +30,19 @@ $('.carousel').owlCarousel({
         }
     }
 })
+
+$('.carousel-2').owlCarousel({
+    margin:16,
+    responsiveClass:true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        640: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        },
+    }
+})
